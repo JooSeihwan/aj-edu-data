@@ -1,0 +1,4 @@
+FROM ubuntu
+Add loop.sh /usr/local/bin/loop.sh
+RUN chmod 700 /usr/local/bin/loop.sh
+ENTRYPOINT /usr/local/bin/loop.sh 1    # Shell format

@@ -1,0 +1,5 @@
+docker build -t test-loop:2 -f Dockerfile2 .
+
+docker run -d --rm test-loop:2
+
+docker logs --tail 5 <CONTAINER ID>
